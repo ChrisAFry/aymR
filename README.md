@@ -1,13 +1,13 @@
-# ayma_R
+# aymaR
 
-`ayma_R` plots field hockey fields, upon which location data (e.g. XY co-ordinates of shots) can be graphed.
+`aymaR` plots field hockey fields, upon which location data (e.g. XY co-ordinates of shots) can be graphed.
 
 ## Prepare R
 
-First, you will need to download the `ayma_R` package from my GitHub.
+First, you will need to download the `aymaR` package from my GitHub.
 
 ```R
-devtools::install_github("ChrisAFry/ayma_R")
+devtools::install_github("ChrisAFry/aymaR")
 ``` 
 
 Next, open `ggplot2` and `ggforce` (install using `install.packages("package")` before opening if you don't already have them) and `ayma_R`.
@@ -15,12 +15,12 @@ Next, open `ggplot2` and `ggforce` (install using `install.packages("package")` 
 ```R
 library(ggplot2)
 library(ggforce)
-library(ayma_R)
+library(aymaR)
 ```
 
 ## Plot some fields
 
-`ayma_R` has 3 functions: plotting a field hockey field, plotting the top half of a field hockey field, and plotting the bottom half of a field hockey field. 
+`aymaR` has 3 functions: plotting a field hockey field, plotting the top half of a field hockey field, and plotting the bottom half of a field hockey field. 
 
 Each function requires 7 inputs: background_color, turf_color, line_color, goal_color, line_width, p_spot_size, and turf_opacity. 
 This seems excessive, but it is so that you have complete control over the look of the field that you want to plot.
