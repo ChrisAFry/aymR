@@ -1,0 +1,15 @@
+Package: ayma_R
+Type: Package
+Title: Creates a hockey field
+Version: 0.1.0
+Author: Christopher Fry
+Maintainer: Christopher Fry <chris.a.fry@hotmail.com>
+Description: Creates a hockey field to plot data on.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+  ggplot2, 
+  ggforce
