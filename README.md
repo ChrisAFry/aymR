@@ -7,7 +7,7 @@
 First, you will need to download the `ayma_R` package from my GitHub.
 
 ```R
-devtools::install_github("ChrisAFry/ayma_R")
+devtools::install_github("ChrisAFry/aymaR")
 ``` 
 
 Next, open `ggplot2` and `ggforce` (install using `install.packages("package")` before opening if you don't already have them) and `ayma_R`.
