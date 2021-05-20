@@ -1,5 +1,7 @@
 # aymaR
 
+<img width="185" alt="aymaR logo" src="https://user-images.githubusercontent.com/16511785/119062543-0f28b300-b9a5-11eb-9f28-dfd381b31b38.png">
+
 `aymaR` plots field hockey fields, upon which location data (e.g. XY co-ordinates of shots) can be graphed.
 
 ## Prepare R
