@@ -1,4 +1,4 @@
-#' astrotuRf
+#' aymR
 #'
 #'Creates a field hockey field, upon which data can be plotted (e.g. xy data of shots to create a shot chart)
 #'
