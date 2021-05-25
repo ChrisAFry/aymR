@@ -1,6 +1,6 @@
 # aymR
 
-<img width="757" alt="aymR logo" src="https://user-images.githubusercontent.com/16511785/119430908-95affe00-bcdf-11eb-8648-eae410b9581a.png">
+<img width="200" alt="aymR logo" src="https://user-images.githubusercontent.com/16511785/119430908-95affe00-bcdf-11eb-8648-eae410b9581a.png">
 
 `aymR` plots field hockey fields, upon which location data (e.g. XY co-ordinates of shots) can be graphed.
 
