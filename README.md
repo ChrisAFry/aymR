@@ -6,7 +6,7 @@
 
 ## Prepare R
 
-First, install the 'devtools' package if you do not already have this.
+First, install the `devtools` package if you do not already have this.
 
 ```R
 install.packages("devtools")
