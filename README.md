@@ -6,7 +6,13 @@
 
 ## Prepare R
 
-First, you will need to download the `aymR` package from my GitHub.
+First, install the devtools package if you do not already have this.
+
+```R
+install.packages("devtools")
+```
+
+Now install the `aymR` package by downloading it from my GitHub.
 
 ```R
 devtools::install_github("ChrisAFry/aymR")
