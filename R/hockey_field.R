@@ -70,55 +70,55 @@ hockey_field <- function(background_color, turf_color, line_color, goal_color, l
     # add the theme created above
     theme_blank_field(),
     # add the baselines and sidelines
-    ggplot2::geom_rect(aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax), fill = turf_color, alpha = turf_opacity, colour = line_color, size = line_width),
+    ggplot2::geom_rect(aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax), fill = turf_color, alpha = turf_opacity, colour = line_color, size = line_width, inherit.aes = FALSE),
     # add the top 23m line
-    ggplot2::geom_segment(aes(x = xmin, y = top_23, xend = xmax, yend = top_23), colour = line_color, size = line_width),
+    ggplot2::geom_segment(aes(x = xmin, y = top_23, xend = xmax, yend = top_23), colour = line_color, size = line_width, inherit.aes = FALSE),
     # add the half way line
-    ggplot2::geom_segment(aes(x = xmin, y = halfway_y, xend = xmax, yend = halfway_y), colour = line_color, size = line_width),
+    ggplot2::geom_segment(aes(x = xmin, y = halfway_y, xend = xmax, yend = halfway_y), colour = line_color, size = line_width, inherit.aes = FALSE),
     # add the bottom 23m line
-    ggplot2::geom_segment(aes(x = xmin, y = bottom_23, xend = xmax, yend = bottom_23), colour = line_color, size = line_width),
+    ggplot2::geom_segment(aes(x = xmin, y = bottom_23, xend = xmax, yend = bottom_23), colour = line_color, size = line_width, inherit.aes = FALSE),
     # add top penalty spot
-    ggplot2::geom_point(aes(x = halfway_x, y = top_p_spot), colour = line_color, shape = 16, size = p_spot_size),
+    ggplot2::geom_point(aes(x = halfway_x, y = top_p_spot), colour = line_color, shape = 16, size = p_spot_size, inherit.aes = FALSE),
     # add bottom penalty spot
-    ggplot2::geom_point(aes(x = halfway_x, y = bottom_p_spot), colour = line_color, shape = 16, size = p_spot_size),
+    ggplot2::geom_point(aes(x = halfway_x, y = bottom_p_spot), colour = line_color, shape = 16, size = p_spot_size, inherit.aes = FALSE),
     # add the top goal crossbar
-    ggplot2::geom_segment(aes(x = goal_post_left - 0, y = ymax + 2, xend = goal_post_right + 0, yend = ymax + 2), colour = goal_color, size = line_width),
+    ggplot2::geom_segment(aes(x = goal_post_left - 0, y = ymax + 2, xend = goal_post_right + 0, yend = ymax + 2), colour = goal_color, size = line_width, inherit.aes = FALSE),
     # add the top goal left post
-    ggplot2::geom_segment(aes(x = goal_post_left, y = ymax + 2, xend = goal_post_left, yend = ymax), colour = goal_color, size = line_width),
+    ggplot2::geom_segment(aes(x = goal_post_left, y = ymax + 2, xend = goal_post_left, yend = ymax), colour = goal_color, size = line_width, inherit.aes = FALSE),
     # add the top goal right post
-    ggplot2::geom_segment(aes(x = goal_post_right, y = ymax + 2, xend = goal_post_right, yend = ymax), colour = goal_color, size = line_width),
+    ggplot2::geom_segment(aes(x = goal_post_right, y = ymax + 2, xend = goal_post_right, yend = ymax), colour = goal_color, size = line_width, inherit.aes = FALSE),
     # add the bottom goal crossbar
-    ggplot2::geom_segment(aes(x = goal_post_left - 0, y = ymin - 2, xend = goal_post_right + 0, yend = ymin - 2), colour = goal_color),
+    ggplot2::geom_segment(aes(x = goal_post_left - 0, y = ymin - 2, xend = goal_post_right + 0, yend = ymin - 2), colour = goal_color, inherit.aes = FALSE),
     # add the bottom goal left post
-    ggplot2::geom_segment(aes(x = goal_post_left, y = ymin - 2, xend = goal_post_left, yend = ymin), colour = goal_color, size = line_width),
+    ggplot2::geom_segment(aes(x = goal_post_left, y = ymin - 2, xend = goal_post_left, yend = ymin), colour = goal_color, size = line_width, inherit.aes = FALSE),
     # add the bottom goal right post
-    ggplot2::geom_segment(aes(x = goal_post_right, y = ymin - 2, xend = goal_post_right, yend = ymin), colour = goal_color, size = line_width),
+    ggplot2::geom_segment(aes(x = goal_post_right, y = ymin - 2, xend = goal_post_right, yend = ymin), colour = goal_color, size = line_width, inherit.aes = FALSE),
     # add the top circle
-    ggforce::geom_arc(aes(x0 = 25.67, y0 = 91.4, start = -0.5 * pi, end = -1 * pi, r = 14.63), colour = line_color, size = line_width),
-    ggforce::geom_arc(aes(x0 = 29.33, y0 = 91.4, start = 0.5 * pi, end = 1 * pi, r = 14.63), colour = line_color, size = line_width),
-    ggplot2::geom_segment(aes(x = 25.67, y = 76.77, xend = 29.33, yend = 76.77), colour = line_color, size = line_width),
+    ggforce::geom_arc(aes(x0 = 25.67, y0 = 91.4, start = -0.5 * pi, end = -1 * pi, r = 14.63), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggforce::geom_arc(aes(x0 = 29.33, y0 = 91.4, start = 0.5 * pi, end = 1 * pi, r = 14.63), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 25.67, y = 76.77, xend = 29.33, yend = 76.77), colour = line_color, size = line_width, inherit.aes = FALSE),
     # add the bottom circle
-    ggforce::geom_arc(aes(x0 = 25.67, y0 = 0, start = 1.5 * pi, end = 2 * pi, r = 14.63), colour = line_color, size = line_width),
-    ggforce::geom_arc(aes(x0 = 29.33, y0 = 0, start = -1.5 * pi, end = -2 * pi, r = 14.63), colour = line_color, size = line_width),
-    ggplot2::geom_segment(aes(x = 25.67, y = 14.63, xend = 29.33, yend = 14.63), colour = line_color, size = line_width),
+    ggforce::geom_arc(aes(x0 = 25.67, y0 = 0, start = 1.5 * pi, end = 2 * pi, r = 14.63), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggforce::geom_arc(aes(x0 = 29.33, y0 = 0, start = -1.5 * pi, end = -2 * pi, r = 14.63), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 25.67, y = 14.63, xend = 29.33, yend = 14.63), colour = line_color, size = line_width, inherit.aes = FALSE),
     # add the top 5m circle
-    ggforce::geom_arc(aes(x0 = 25.67, y0 = 91.4, start = -0.5 * pi, end = -1 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width),
-    ggforce::geom_arc(aes(x0 = 29.33, y0 = 91.4, start = 0.5 * pi, end = 1 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width),
-    ggplot2::geom_segment(aes(x = 25.67, y = 71.77, xend = 29.33, yend = 71.77), colour = line_color, linetype = "dashed", size = line_width),
+    ggforce::geom_arc(aes(x0 = 25.67, y0 = 91.4, start = -0.5 * pi, end = -1 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE),
+    ggforce::geom_arc(aes(x0 = 29.33, y0 = 91.4, start = 0.5 * pi, end = 1 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 25.67, y = 71.77, xend = 29.33, yend = 71.77), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE),
     # add the bottom 5m circle
-    ggforce::geom_arc(aes(x0 = 25.67, y0 = 0, start = 1.5 * pi, end = 2 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width),
-    ggforce::geom_arc(aes(x0 = 29.33, y0 = 0, start = -1.5 * pi, end = -2 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width),
-    ggplot2::geom_segment(aes(x = 25.67, y = 19.63, xend = 29.33, yend = 19.63), colour = line_color, linetype = "dashed", size = line_width),
+    ggforce::geom_arc(aes(x0 = 25.67, y0 = 0, start = 1.5 * pi, end = 2 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE),
+    ggforce::geom_arc(aes(x0 = 29.33, y0 = 0, start = -1.5 * pi, end = -2 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 25.67, y = 19.63, xend = 29.33, yend = 19.63), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE),
     ## Top circle marks
-    ggplot2::geom_segment(aes(x = 15.67, y = 91.4, xend = 15.67, yend = 91.9), colour = line_color, size = line_width),
-    ggplot2::geom_segment(aes(x = 20.67, y = 91.4, xend = 20.67, yend = 91.9), colour = line_color, size = line_width),
-    ggplot2::geom_segment(aes(x = 34.33, y = 91.4, xend = 34.33, yend = 91.9), colour = line_color, size = line_width),
-    ggplot2::geom_segment(aes(x = 39.33, y = 91.4, xend = 39.33, yend = 91.9), colour = line_color, size = line_width),
+    ggplot2::geom_segment(aes(x = 15.67, y = 91.4, xend = 15.67, yend = 91.9), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 20.67, y = 91.4, xend = 20.67, yend = 91.9), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 34.33, y = 91.4, xend = 34.33, yend = 91.9), colour = line_color, size = line_width, inherit.aes = FALSE, ),
+    ggplot2::geom_segment(aes(x = 39.33, y = 91.4, xend = 39.33, yend = 91.9), colour = line_color, size = line_width, inherit.aes = FALSE),
     ## Bottom circle marks
-    ggplot2::geom_segment(aes(x = 15.67, y = 0, xend = 15.67, yend = -0.5), colour = line_color, size = line_width),
-    ggplot2::geom_segment(aes(x = 20.67, y = 0, xend = 20.67, yend = -0.5), colour = line_color, size = line_width),
-    ggplot2::geom_segment(aes(x = 34.33, y = 0, xend = 34.33, yend = -0.5), colour = line_color, size = line_width),
-    ggplot2::geom_segment(aes(x = 39.33, y = 0, xend = 39.33, yend = -0.5), colour = line_color, size = line_width)
+    ggplot2::geom_segment(aes(x = 15.67, y = 0, xend = 15.67, yend = -0.5), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 20.67, y = 0, xend = 20.67, yend = -0.5), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 34.33, y = 0, xend = 34.33, yend = -0.5), colour = line_color, size = line_width, inherit.aes = FALSE),
+    ggplot2::geom_segment(aes(x = 39.33, y = 0, xend = 39.33, yend = -0.5), colour = line_color, size = line_width, inherit.aes = FALSE)
   )
 
   return(hockey_field)
