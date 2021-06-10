@@ -62,7 +62,7 @@ hockey_field <- function(background_color, turf_color, line_color, goal_color, l
   goal_post_left <- 25.67
   goal_post_right <- 29.33
 
-  # Put it all togther and make the field
+  # Put it all together and make the field
   hockey_field <- list(
     # set the boundary of the plot, with some additional spacing
     ggplot2::xlim(c(xmin - 5, xmax + 5)),
