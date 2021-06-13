@@ -76,6 +76,12 @@ ggplot(newdata) + stat_density_2d(aes(x, y, fill = ..density..), geom = "raster"
 ```
 <img width="604" alt="Screen Shot 2021-02-13 at 2 34 30 PM" src="https://user-images.githubusercontent.com/16511785/107859685-1b7efc00-6e09-11eb-8c2e-4bae5c5a055f.png">
 
+## Companion ebook
+
+If you are new to R, I have written en ebook on getting started with R, and how to use aymR to make beautiful charts. You can purchase it for just $10 at the link below:  
+
+https://app.simplegoods.co/i/VXHRPELK
+
 ## Inspiration
 These 2 packages for plotting soccer fields were helpful in developing my own package: <br/>
 1 - https://github.com/Torvaney/ggsoccer <br/>
