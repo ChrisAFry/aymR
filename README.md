@@ -69,16 +69,9 @@ ggplot(mydata) + hockey_field("#bfbfbf", "#7CA867", "#ffffff", "#ffffff", .5, .7
 ```
 <img width="429" alt="Screen Shot 2021-02-13 at 1 49 33 PM" src="https://user-images.githubusercontent.com/16511785/107858514-81b45080-6e02-11eb-8c08-5d76614d1dd1.png">
 
-However, the turf opacity allows you to make the turf completely transparent so that only the lines of the field are visible (which you could then plot on top of your data). This will be great for heatmaps.
-```R
-# Imported an excel spreadsheet from my desktop called 'newdata', which had 2 columns: x, y.
-ggplot(newdata) + stat_density_2d(aes(x, y, fill = ..density..), geom = "raster", contour = FALSE) + hockey_field("#bfbfbf", "#7CA867", "#ffffff", "#ffffff", .5, .75, 0)
-```
-<img width="604" alt="Screen Shot 2021-02-13 at 2 34 30 PM" src="https://user-images.githubusercontent.com/16511785/107859685-1b7efc00-6e09-11eb-8c2e-4bae5c5a055f.png">
-
 ## Companion ebook
 
-If you are new to R, I have written en ebook on getting started with R, and how to use aymR to make beautiful charts. You can purchase it for just $10 at the link below:  
+If you are new to R, I have written an ebook on getting started with R, and how to use aymR to make beautiful charts. You can purchase it for just $10 at the link below:  
 
 https://app.simplegoods.co/i/VXHRPELK
 
