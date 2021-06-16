@@ -61,6 +61,8 @@ ggplot() + hockey_field_bottom_half("#060606", "#060606", "#ff00e7", "#00ecff", 
 
 ## Plot data on a field
 
+aymR field uses FIH dimensions - so the fields are 0-55 wide, and 0-91.4 tall. Therefore, your data must use the scale or you need to convert it before plotting.
+
 ggplot2 works by layering components. Therefore, in most situations you will want to add the hockey field before you plot your data.
 
 ```R
