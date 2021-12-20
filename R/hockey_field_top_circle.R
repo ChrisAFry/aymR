@@ -1,6 +1,6 @@
 #' aymR
 #'
-#'Creates the top half of a field hockey field, upon which data can be plotted (e.g. xy data of shots to create a shot chart)
+#'Creates the top circle of a field hockey field, upon which data can be plotted (e.g. xy data of shots to create a shot chart)
 #'
 #' @param turf_color Color of the astroturf
 #' @param line_color Color of the field lines (excluding the goals)
@@ -68,7 +68,7 @@ hockey_field_top_circle <- function(background_color, turf_color, line_color, go
     # add the theme created above
     theme_blank_field(),
     # add the top baseline
-    ggplot2::geom_segment(aes(x = xmin, y = ymax, xend = xmax, yend = ymax), colour = line_color, size = line_width, inherit.aes = FALSE)
+    ggplot2::geom_segment(aes(x = xmin, y = ymax, xend = xmax, yend = ymax), colour = line_color, size = line_width, inherit.aes = FALSE),
     # add top penalty spot
     ggplot2::geom_point(aes(x = halfway_x, y = top_p_spot), colour = line_color, shape = 16, size = p_spot_size, inherit.aes = FALSE),
     # add the top goal crossbar
