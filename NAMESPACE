@@ -2,4 +2,5 @@
 
 export(hockey_field)
 export(hockey_field_bottom_half)
+export(hockey_field_top_circle)
 export(hockey_field_top_half)

@@ -2,7 +2,7 @@
 % Please edit documentation in R/hockey_field.R
 \name{hockey_field}
 \alias{hockey_field}
-\title{astrotuRf}
+\title{aymR}
 \usage{
 hockey_field(
   background_color,

@@ -2,7 +2,7 @@
 % Please edit documentation in R/hockey_field_bottom_half.R
 \name{hockey_field_bottom_half}
 \alias{hockey_field_bottom_half}
-\title{astrotuRf}
+\title{aymR}
 \usage{
 hockey_field_bottom_half(
   background_color,
