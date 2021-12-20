@@ -80,11 +80,7 @@ hockey_field_top_circle <- function(background_color, turf_color, line_color, go
     # add the top circle
     ggforce::geom_arc(aes(x0 = 25.67, y0 = 91.4, start = -0.5 * pi, end = -1 * pi, r = 14.63), colour = line_color, size = line_width, inherit.aes = FALSE),
     ggforce::geom_arc(aes(x0 = 29.33, y0 = 91.4, start = 0.5 * pi, end = 1 * pi, r = 14.63), colour = line_color, size = line_width, inherit.aes = FALSE),
-    ggplot2::geom_segment(aes(x = 25.67, y = 76.77, xend = 29.33, yend = 76.77), colour = line_color, size = line_width, inherit.aes = FALSE),
-    # add the top 5m circle
-    ggforce::geom_arc(aes(x0 = 25.67, y0 = 91.4, start = -0.5 * pi, end = -1 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE),
-    ggforce::geom_arc(aes(x0 = 29.33, y0 = 91.4, start = 0.5 * pi, end = 1 * pi, r = 19.63), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE),
-    ggplot2::geom_segment(aes(x = 25.67, y = 71.77, xend = 29.33, yend = 71.77), colour = line_color, linetype = "dashed", size = line_width, inherit.aes = FALSE)
+    ggplot2::geom_segment(aes(x = 25.67, y = 76.77, xend = 29.33, yend = 76.77), colour = line_color, size = line_width, inherit.aes = FALSE)
   )
 
   return(hockey_field_top_circle)
