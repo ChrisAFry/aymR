@@ -43,7 +43,7 @@ hockey_field_top_circle <- function(background_color, turf_color, line_color, go
     )}
 
   # Set the size of the field
-  ymin <- 80 # bottom
+  ymin <- 75 # bottom
   ymax <- 91.4 # top baseline
   xmin <- 5.67 # left sideline
   xmax <- 49.33 # right sideline
